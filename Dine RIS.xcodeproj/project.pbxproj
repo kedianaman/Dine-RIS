@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */; };
+		ED21C9C41E31F1F100EF24DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9C31E31F1F100EF24DE /* ViewController.swift */; };
+		ED21C9C71E31F1F100EF24DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C51E31F1F100EF24DE /* Main.storyboard */; };
+		ED21C9C91E31F1F100EF24DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C81E31F1F100EF24DE /* Assets.xcassets */; };
+		ED21C9CC1E31F1F100EF24DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */; };
+		ED21C9D71E31F1F100EF24DE /* Dine_RISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9D61E31F1F100EF24DE /* Dine_RISTests.swift */; };
+		ED21C9E21E31F1F100EF24DE /* Dine_RISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED21C9D31E31F1F100EF24DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED21C9B61E31F1F000EF24DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED21C9BD1E31F1F000EF24DE;
+			remoteInfo = "Dine RIS";
+		};
+		ED21C9DE1E31F1F100EF24DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED21C9B61E31F1F000EF24DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED21C9BD1E31F1F000EF24DE;
+			remoteInfo = "Dine RIS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED21C9BE1E31F1F000EF24DE /* Dine RIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dine RIS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED21C9C31E31F1F100EF24DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED21C9C61E31F1F100EF24DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED21C9C81E31F1F100EF24DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED21C9CB1E31F1F100EF24DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED21C9CD1E31F1F100EF24DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED21C9D21E31F1F100EF24DE /* Dine RISTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dine RISTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED21C9D61E31F1F100EF24DE /* Dine_RISTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dine_RISTests.swift; sourceTree = "<group>"; };
+		ED21C9D81E31F1F100EF24DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED21C9DD1E31F1F100EF24DE /* Dine RISUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dine RISUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dine_RISUITests.swift; sourceTree = "<group>"; };
+		ED21C9E31E31F1F100EF24DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED21C9BB1E31F1F000EF24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9CF1E31F1F100EF24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9DA1E31F1F100EF24DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED21C9B51E31F1F000EF24DE = {
+			isa = PBXGroup;
+			children = (
+				ED21C9C01E31F1F000EF24DE /* Dine RIS */,
+				ED21C9D51E31F1F100EF24DE /* Dine RISTests */,
+				ED21C9E01E31F1F100EF24DE /* Dine RISUITests */,
+				ED21C9BF1E31F1F000EF24DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED21C9BF1E31F1F000EF24DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED21C9BE1E31F1F000EF24DE /* Dine RIS.app */,
+				ED21C9D21E31F1F100EF24DE /* Dine RISTests.xctest */,
+				ED21C9DD1E31F1F100EF24DE /* Dine RISUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED21C9C01E31F1F000EF24DE /* Dine RIS */ = {
+			isa = PBXGroup;
+			children = (
+				ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */,
+				ED21C9C31E31F1F100EF24DE /* ViewController.swift */,
+				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
+				ED21C9C81E31F1F100EF24DE /* Assets.xcassets */,
+				ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */,
+				ED21C9CD1E31F1F100EF24DE /* Info.plist */,
+			);
+			path = "Dine RIS";
+			sourceTree = "<group>";
+		};
+		ED21C9D51E31F1F100EF24DE /* Dine RISTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED21C9D61E31F1F100EF24DE /* Dine_RISTests.swift */,
+				ED21C9D81E31F1F100EF24DE /* Info.plist */,
+			);
+			path = "Dine RISTests";
+			sourceTree = "<group>";
+		};
+		ED21C9E01E31F1F100EF24DE /* Dine RISUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */,
+				ED21C9E31E31F1F100EF24DE /* Info.plist */,
+			);
+			path = "Dine RISUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED21C9BD1E31F1F000EF24DE /* Dine RIS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED21C9E61E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RIS" */;
+			buildPhases = (
+				ED21C9BA1E31F1F000EF24DE /* Sources */,
+				ED21C9BB1E31F1F000EF24DE /* Frameworks */,
+				ED21C9BC1E31F1F000EF24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dine RIS";
+			productName = "Dine RIS";
+			productReference = ED21C9BE1E31F1F000EF24DE /* Dine RIS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED21C9D11E31F1F100EF24DE /* Dine RISTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED21C9E91E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RISTests" */;
+			buildPhases = (
+				ED21C9CE1E31F1F100EF24DE /* Sources */,
+				ED21C9CF1E31F1F100EF24DE /* Frameworks */,
+				ED21C9D01E31F1F100EF24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED21C9D41E31F1F100EF24DE /* PBXTargetDependency */,
+			);
+			name = "Dine RISTests";
+			productName = "Dine RISTests";
+			productReference = ED21C9D21E31F1F100EF24DE /* Dine RISTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED21C9DC1E31F1F100EF24DE /* Dine RISUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED21C9EC1E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RISUITests" */;
+			buildPhases = (
+				ED21C9D91E31F1F100EF24DE /* Sources */,
+				ED21C9DA1E31F1F100EF24DE /* Frameworks */,
+				ED21C9DB1E31F1F100EF24DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED21C9DF1E31F1F100EF24DE /* PBXTargetDependency */,
+			);
+			name = "Dine RISUITests";
+			productName = "Dine RISUITests";
+			productReference = ED21C9DD1E31F1F100EF24DE /* Dine RISUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED21C9B61E31F1F000EF24DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ruamrudee International School";
+				TargetAttributes = {
+					ED21C9BD1E31F1F000EF24DE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T252EPP745;
+						ProvisioningStyle = Automatic;
+					};
+					ED21C9D11E31F1F100EF24DE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T252EPP745;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED21C9BD1E31F1F000EF24DE;
+					};
+					ED21C9DC1E31F1F100EF24DE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T252EPP745;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ED21C9BD1E31F1F000EF24DE;
+					};
+				};
+			};
+			buildConfigurationList = ED21C9B91E31F1F000EF24DE /* Build configuration list for PBXProject "Dine RIS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED21C9B51E31F1F000EF24DE;
+			productRefGroup = ED21C9BF1E31F1F000EF24DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED21C9BD1E31F1F000EF24DE /* Dine RIS */,
+				ED21C9D11E31F1F100EF24DE /* Dine RISTests */,
+				ED21C9DC1E31F1F100EF24DE /* Dine RISUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED21C9BC1E31F1F000EF24DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21C9CC1E31F1F100EF24DE /* LaunchScreen.storyboard in Resources */,
+				ED21C9C91E31F1F100EF24DE /* Assets.xcassets in Resources */,
+				ED21C9C71E31F1F100EF24DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9D01E31F1F100EF24DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9DB1E31F1F100EF24DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED21C9BA1E31F1F000EF24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21C9C41E31F1F100EF24DE /* ViewController.swift in Sources */,
+				ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9CE1E31F1F100EF24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21C9D71E31F1F100EF24DE /* Dine_RISTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C9D91E31F1F100EF24DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED21C9E21E31F1F100EF24DE /* Dine_RISUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED21C9D41E31F1F100EF24DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED21C9BD1E31F1F000EF24DE /* Dine RIS */;
+			targetProxy = ED21C9D31E31F1F100EF24DE /* PBXContainerItemProxy */;
+		};
+		ED21C9DF1E31F1F100EF24DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED21C9BD1E31F1F000EF24DE /* Dine RIS */;
+			targetProxy = ED21C9DE1E31F1F100EF24DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED21C9C51E31F1F100EF24DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED21C9C61E31F1F100EF24DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED21C9CB1E31F1F100EF24DE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED21C9E41E31F1F100EF24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED21C9E51E31F1F100EF24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED21C9E71E31F1F100EF24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RIS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RIS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ED21C9E81E31F1F100EF24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RIS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RIS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		ED21C9EA1E31F1F100EF24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RISTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RISTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dine RIS.app/Dine RIS";
+			};
+			name = Debug;
+		};
+		ED21C9EB1E31F1F100EF24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RISTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RISTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dine RIS.app/Dine RIS";
+			};
+			name = Release;
+		};
+		ED21C9ED1E31F1F100EF24DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RISUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RISUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Dine RIS";
+			};
+			name = Debug;
+		};
+		ED21C9EE1E31F1F100EF24DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T252EPP745;
+				INFOPLIST_FILE = "Dine RISUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RIS.Dine-RISUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Dine RIS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED21C9B91E31F1F000EF24DE /* Build configuration list for PBXProject "Dine RIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21C9E41E31F1F100EF24DE /* Debug */,
+				ED21C9E51E31F1F100EF24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED21C9E61E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21C9E71E31F1F100EF24DE /* Debug */,
+				ED21C9E81E31F1F100EF24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED21C9E91E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RISTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21C9EA1E31F1F100EF24DE /* Debug */,
+				ED21C9EB1E31F1F100EF24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED21C9EC1E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RISUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED21C9ED1E31F1F100EF24DE /* Debug */,
+				ED21C9EE1E31F1F100EF24DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED21C9B61E31F1F000EF24DE /* Project object */;
+}
