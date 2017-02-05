@@ -1,0 +1,6 @@
+framework module Pods_Dine_RIS {
+  umbrella header "Pods-Dine RIS-umbrella.h"
+
+  export *
+  module * { export * }
+}

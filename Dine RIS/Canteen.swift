@@ -8,24 +8,39 @@
 
 import Foundation
 import UIKit
+import FirebaseDatabase
 
 class Canteen {
-    private var restaurants: [Restaurant]?
+    
+    init() {
+        let databaseReference = FIRDatabase.database().reference()
+        var restaurantNames = ["Redeemer Cuisine", "Thai Kitchen"]
+        for name in restaurantNames {
+            databaseReference.child("Restaurants").child(name).queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
+                let restaurantInfo = snapshot.value! as! NSDictionary
+                let name = restaurantInfo["name"] as! String
+                print(name)
+                let cuisineType = restaurantInfo["cuisineType"] as! String
+                let imageName = restaurantInfo["bannerImage"] as! String
+                let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
+                self.restaurants.append(restaurant)
+                
+            })
+        }
+    }
+    
+    private var restaurants = [Restaurant]()
     
     func restaurantAt(index: Int) -> Restaurant? {
-        if restaurants != nil && index < restaurants!.count {
-            return restaurants![index]
+        if index < restaurants.count {
+            return restaurants[index]
         } else {
             return nil
         }
     }
     
     func numberOfRestaurants() -> Int {
-        if let restaurants = restaurants {
-            return restaurants.count
-        } else {
-            return 0
-        }
+        return 2
     }
 }
 
@@ -35,6 +50,12 @@ class Restaurant {
     var number: String?
     var cuisineType: String?
     private var dishes = [Dish]()
+    
+    init(name: String, cuisineType: String, image: String) {
+        self.name = name
+        self.cuisineType = cuisineType
+        self.image = UIImage(named: image)
+    }
     
     func numberOfDishes() -> Int {
         return dishes.count

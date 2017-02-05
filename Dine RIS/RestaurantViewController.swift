@@ -20,13 +20,11 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //
-        restaurant = Restaurant()
-        restaurant.name = "Redeemer Cuisine"
-        restaurant.cuisineType = "Western"
-        restaurant.number = "66991656320"
-        restaurant.image = UIImage(named: "RedeemerBanner")
         
+        Canteen()
+        //
+        restaurant = Restaurant(name: "Redeemer Cuisine", cuisineType: "Western", image: "RedeemerBanner")
+
         let dish = Dish()
         dish.name = "Margherita"
         dish.price = 125

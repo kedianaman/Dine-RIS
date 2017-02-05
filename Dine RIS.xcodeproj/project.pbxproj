@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF14C10EC8F60FD047956D73 /* Pods_Dine_RIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C32F031D5D9E2635A6CBF24 /* Pods_Dine_RIS.framework */; };
 		ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */; };
 		ED21C9C71E31F1F100EF24DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C51E31F1F100EF24DE /* Main.storyboard */; };
 		ED21C9C91E31F1F100EF24DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C81E31F1F100EF24DE /* Assets.xcassets */; };
@@ -14,9 +15,13 @@
 		ED21C9D71E31F1F100EF24DE /* Dine_RISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9D61E31F1F100EF24DE /* Dine_RISTests.swift */; };
 		ED21C9E21E31F1F100EF24DE /* Dine_RISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */; };
 		ED21C9F61E31F24C00EF24DE /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9F51E31F24C00EF24DE /* Canteen.swift */; };
-		ED44FD0F1E45D434002F6518 /* CanteenDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED44FD0E1E45D434002F6518 /* CanteenDataManager.swift */; };
 		ED6B60A21E332E7400BE4110 /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */; };
 		ED6B60A61E3330A800BE4110 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */; };
+		ED890E5C1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
+		ED890E5D1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
+		ED890E5E1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
+		EDB1FC251E4709ED004B3684 /* RestaurantMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */; };
+		EDB1FC271E470AAC004B3684 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C32F031D5D9E2635A6CBF24 /* Pods_Dine_RIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dine_RIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D510E0675540E92E712A25 /* Pods-Dine RIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dine RIS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS.release.xcconfig"; sourceTree = "<group>"; };
+		DB1AD04EAF3403098092D534 /* Pods-Dine RIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dine RIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED21C9BE1E31F1F000EF24DE /* Dine RIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dine RIS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED21C9C61E31F1F100EF24DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,9 +71,11 @@
 		ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dine_RISUITests.swift; sourceTree = "<group>"; };
 		ED21C9E31E31F1F100EF24DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED21C9F51E31F24C00EF24DE /* Canteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
-		ED44FD0E1E45D434002F6518 /* CanteenDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanteenDataManager.swift; sourceTree = "<group>"; };
 		ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
 		ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.plist; };
+		ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantMenuViewController.swift; sourceTree = "<group>"; };
+		EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF14C10EC8F60FD047956D73 /* Pods_Dine_RIS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3939AA38364E94A199BC63C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB1AD04EAF3403098092D534 /* Pods-Dine RIS.debug.xcconfig */,
+				A8D510E0675540E92E712A25 /* Pods-Dine RIS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B0E70AF536110BACECA3CF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C32F031D5D9E2635A6CBF24 /* Pods_Dine_RIS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED21C9B51E31F1F000EF24DE = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +128,8 @@
 				ED21C9D51E31F1F100EF24DE /* Dine RISTests */,
 				ED21C9E01E31F1F100EF24DE /* Dine RISUITests */,
 				ED21C9BF1E31F1F000EF24DE /* Products */,
+				3939AA38364E94A199BC63C7 /* Pods */,
+				6B0E70AF536110BACECA3CF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,13 +148,15 @@
 			children = (
 				ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */,
 				ED21C9F51E31F24C00EF24DE /* Canteen.swift */,
-				ED44FD0E1E45D434002F6518 /* CanteenDataManager.swift */,
 				ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */,
 				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
+				EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */,
+				EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */,
 				ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */,
 				ED21C9C81E31F1F100EF24DE /* Assets.xcassets */,
 				ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */,
 				ED21C9CD1E31F1F100EF24DE /* Info.plist */,
+				ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */,
 			);
 			path = "Dine RIS";
 			sourceTree = "<group>";
@@ -154,10 +186,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED21C9E61E31F1F100EF24DE /* Build configuration list for PBXNativeTarget "Dine RIS" */;
 			buildPhases = (
+				D7CD5D46562091B368991C20 /* [CP] Check Pods Manifest.lock */,
 				ED21C9BA1E31F1F000EF24DE /* Sources */,
 				ED21C9BB1E31F1F000EF24DE /* Frameworks */,
 				ED21C9BC1E31F1F000EF24DE /* Resources */,
 				EDF1356F1E373C2500DED85A /* Embed Frameworks */,
+				D5C108FBDC81F874DC12DD3B /* [CP] Embed Pods Frameworks */,
+				5A84AFA38927CF13E3054425 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED21C9CC1E31F1F100EF24DE /* LaunchScreen.storyboard in Resources */,
+				ED890E5C1E462072005ACD0E /* GoogleService-Info.plist in Resources */,
 				ED21C9C91E31F1F100EF24DE /* Assets.xcassets in Resources */,
 				ED21C9C71E31F1F100EF24DE /* Main.storyboard in Resources */,
 			);
@@ -268,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED890E5D1E462072005ACD0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +312,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED890E5E1E462072005ACD0E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A84AFA38927CF13E3054425 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C108FBDC81F874DC12DD3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7CD5D46562091B368991C20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED21C9BA1E31F1F000EF24DE /* Sources */ = {
@@ -286,9 +372,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6B60A21E332E7400BE4110 /* DishTableViewCell.swift in Sources */,
+				EDB1FC251E4709ED004B3684 /* RestaurantMenuViewController.swift in Sources */,
 				ED6B60A61E3330A800BE4110 /* RestaurantViewController.swift in Sources */,
-				ED44FD0F1E45D434002F6518 /* CanteenDataManager.swift in Sources */,
 				ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */,
+				EDB1FC271E470AAC004B3684 /* RestaurantTableViewCell.swift in Sources */,
 				ED21C9F61E31F24C00EF24DE /* Canteen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +526,7 @@
 		};
 		ED21C9E71E31F1F100EF24DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB1AD04EAF3403098092D534 /* Pods-Dine RIS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T252EPP745;
@@ -456,6 +544,7 @@
 		};
 		ED21C9E81E31F1F100EF24DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D510E0675540E92E712A25 /* Pods-Dine RIS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T252EPP745;
