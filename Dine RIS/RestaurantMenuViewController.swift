@@ -7,30 +7,50 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var restaurantTableView: UITableView!
-    var canteen: Canteen!
+    var ref: FIRDatabaseReference!
+    var refHandle: UInt!
+    var restaurantList = [Restaurant]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        canteen = Canteen()
-
+        ref = FIRDatabase.database().reference()
+        fetchRestaurants()
         // Do any additional setup after loading the view.
     }
     
+    func fetchRestaurants() {
+        refHandle = ref.child("Restaurants").observe(.childAdded, with: { (snapshot) in
+            if let restaurantDict = snapshot.value as? [String: AnyObject] {
+                let name = restaurantDict["name"] as! String
+                let cuisineType = restaurantDict["cuisineType"] as! String
+                let imageName = restaurantDict["bannerImage"] as! String
+                let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
+                self.restaurantList.append(restaurant)
+                self.restaurantTableView.reloadData()
+                
+            }
+        })
+        
+    }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(canteen.numberOfRestaurants())
-        return canteen.numberOfRestaurants()
+        return restaurantList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let restaurantCell = tableView.dequeueReusableCell(withIdentifier: "RestaurantTableViewCellIdentifier", for: indexPath) as! RestaurantTableViewCell
-        let restaurant = canteen.restaurantAt(index: indexPath.row)
-        restaurantCell.restaurantNameLabel.text = restaurant?.name
-        restaurantCell.restaurantTypeSubtitle.text = restaurant?.cuisineType
+        let restaurant = restaurantList[indexPath.row]
+        restaurantCell.restaurantNameLabel.text = restaurant.name
+        restaurantCell.restaurantTypeSubtitle.text = restaurant.cuisineType
         return restaurantCell
     }
 
