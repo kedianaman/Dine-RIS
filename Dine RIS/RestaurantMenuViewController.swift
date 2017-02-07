@@ -26,8 +26,10 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func fetchRestaurants() {
+
         refHandle = ref.child("Restaurants").observe(.childAdded, with: { (snapshot) in
             if let restaurantDict = snapshot.value as? [String: AnyObject] {
+                
                 let name = restaurantDict["name"] as! String
                 let cuisineType = restaurantDict["cuisineType"] as! String
                 let imageName = restaurantDict["bannerImage"] as! String
@@ -39,6 +41,8 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
         })
         
     }
+    
+    //TableView Delegate and DataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -53,6 +57,17 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
         restaurantCell.restaurantNameLabel.text = restaurant.name
         restaurantCell.restaurantTypeSubtitle.text = restaurant.cuisineType
         return restaurantCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "RestaurantDishesSegueIdentifier", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let restaurantViewController = segue.destination as? RestaurantDishesViewController {
+            let index = sender as! Int
+            restaurantViewController.restaurant = restaurantList[index]
+        }
     }
 
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -15,12 +17,46 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var dishesTableView: UITableView!
     @IBOutlet weak var bannerImageView: UIImageView!
     
-    var restaurant: Restaurant?
+    var restaurant: Restaurant!
+    var ref: FIRDatabaseReference!
+    var refHandle: UInt!
+    
+    struct Section {
+        var title: String
+        var dishes: [Dish]
+        
+        init(title: String, dishes: [Dish] ) {
+            self.title = title
+            self.dishes = dishes
+        }
+    }
+    
+    var sectionTitles = [String]()
+    var sections = [Section]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
+        self.navigationController?.navigationBar.isHidden = true
+        self.restaurantNameLabel.text = restaurant.name
+        self.cuisineTypeLabel.text = restaurant.cuisineType
+        fetchDishes()
+    }
+    
+    func fetchDishes() {
+        refHandle = ref.child("Dishes").child(restaurant.name!).observe(.childAdded, with: { (snapshot) in
+            let dishesDict = snapshot.value as! NSDictionary
+            self.sectionTitles = dishesDict.allKeys as! [String]
+        }, withCancel: nil)
         
-        // Do any additional setup after loading the view.
+        for sectionTitle in sectionTitles {
+            ref.child("Dishes").child(restaurant.name!).child(sectionTitle).observe(.childAdded, with: { (snapshot) in
+                print(snapshot)
+            }, withCancel: nil)
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,5 +69,6 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
         cell.detailTextLabel?.text = "45"
         return cell
     }
+    
 
 }
