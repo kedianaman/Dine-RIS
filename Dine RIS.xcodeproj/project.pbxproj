@@ -22,6 +22,7 @@
 		ED890E5E1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
 		EDB1FC251E4709ED004B3684 /* RestaurantMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */; };
 		EDB1FC271E470AAC004B3684 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */; };
+		EDCD6A941E483F7100B2AC96 /* RestaurantDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCD6A931E483F7100B2AC96 /* RestaurantDishesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantMenuViewController.swift; sourceTree = "<group>"; };
 		EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		EDCD6A931E483F7100B2AC96 /* RestaurantDishesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDishesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +150,11 @@
 			children = (
 				ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */,
 				ED21C9F51E31F24C00EF24DE /* Canteen.swift */,
-				ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */,
 				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
-				EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */,
+				EDCD6A931E483F7100B2AC96 /* RestaurantDishesViewController.swift */,
 				EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */,
-				ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */,
+				EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */,
+				EDCD6A921E483B6700B2AC96 /* Old Restaurant View */,
 				ED21C9C81E31F1F100EF24DE /* Assets.xcassets */,
 				ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */,
 				ED21C9CD1E31F1F100EF24DE /* Info.plist */,
@@ -177,6 +179,15 @@
 				ED21C9E31E31F1F100EF24DE /* Info.plist */,
 			);
 			path = "Dine RISUITests";
+			sourceTree = "<group>";
+		};
+		EDCD6A921E483B6700B2AC96 /* Old Restaurant View */ = {
+			isa = PBXGroup;
+			children = (
+				ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */,
+				ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */,
+			);
+			name = "Old Restaurant View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +384,7 @@
 			files = (
 				ED6B60A21E332E7400BE4110 /* DishTableViewCell.swift in Sources */,
 				EDB1FC251E4709ED004B3684 /* RestaurantMenuViewController.swift in Sources */,
+				EDCD6A941E483F7100B2AC96 /* RestaurantDishesViewController.swift in Sources */,
 				ED6B60A61E3330A800BE4110 /* RestaurantViewController.swift in Sources */,
 				ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */,
 				EDB1FC271E470AAC004B3684 /* RestaurantTableViewCell.swift in Sources */,

@@ -20,6 +20,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
+
         fetchRestaurants()
         // Do any additional setup after loading the view.
     }
