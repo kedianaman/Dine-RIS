@@ -12,9 +12,9 @@ import FirebaseDatabase
 
 class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var dishesTableView: UITableView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var cuisineTypeLabel: UILabel!
-    @IBOutlet weak var dishesTableView: UITableView!
     @IBOutlet weak var bannerImageView: UIImageView!
     
     var restaurant: Restaurant!
@@ -33,6 +33,7 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
     
     var sectionTitles = [String]()
     var sections = [Section]()
+    var dishes = [Dish]()
 
     
     override func viewDidLoad() {
@@ -45,28 +46,37 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func fetchDishes() {
-        refHandle = ref.child("Dishes").child(restaurant.name!).observe(.childAdded, with: { (snapshot) in
-            let dishesDict = snapshot.value as! NSDictionary
-            self.sectionTitles = dishesDict.allKeys as! [String]
+        refHandle = ref.child("Dishes").child(restaurant.name!).observe(.value, with: { (snapshot) in
+            let sectionDict = snapshot.value as! NSDictionary
+            print(snapshot)
+            self.sectionTitles = sectionDict.allKeys as! [String]
+            print(self.sectionTitles)
+            for sectionTitle in self.sectionTitles {
+                self.ref.child("Dishes").child(self.restaurant.name!).child(sectionTitle).observe(.childAdded, with: { (snapshot) in
+                    
+                    let dishesDict = snapshot.value as! [String: Any]
+                    let dishName = dishesDict["dishName"] as! String
+                    let dishPrice = dishesDict["dishPrice"] as! Int
+                    let vegetarian = dishesDict["vegetarian"] as! Bool
+                    let dish = Dish(name: dishName, price: dishPrice, vegetarian: vegetarian)
+                    self.dishes.append(dish)
+                    self.dishesTableView.reloadData()
+                }, withCancel: nil)
+//                self.sections.append(Section(title: sectionTitle, dishes: self.dishes))
+            }
+            self.dishesTableView.reloadData()
         }, withCancel: nil)
-        
-        for sectionTitle in sectionTitles {
-            ref.child("Dishes").child(restaurant.name!).child(sectionTitle).observe(.childAdded, with: { (snapshot) in
-                print(snapshot)
-            }, withCancel: nil)
-        }
         
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return dishes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "DishesCellIdentifier")
-        cell.textLabel?.text = "Dish Name"
-        cell.detailTextLabel?.text = "45"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DishesCellIdentifier") as! DishTableViewCell
+        cell.dish = dishes[indexPath.row]
         return cell
     }
     

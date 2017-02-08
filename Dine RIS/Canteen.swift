@@ -72,9 +72,13 @@ class Restaurant {
 
 class Dish {
     var name: String?
-    var type: String?
-    var rating: Int?
     var price: Int?
     var image: UIImage?
     var vegetarian = false
+    
+    init(name: String, price: Int, vegetarian: Bool) {
+        self.name = name
+        self.price = price
+        self.vegetarian = vegetarian
+    }
 }

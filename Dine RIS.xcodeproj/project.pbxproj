@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AF14C10EC8F60FD047956D73 /* Pods_Dine_RIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C32F031D5D9E2635A6CBF24 /* Pods_Dine_RIS.framework */; };
+		ED0B32071E49FA0400F459A9 /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B32061E49FA0400F459A9 /* DishTableViewCell.swift */; };
 		ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */; };
 		ED21C9C71E31F1F100EF24DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C51E31F1F100EF24DE /* Main.storyboard */; };
 		ED21C9C91E31F1F100EF24DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED21C9C81E31F1F100EF24DE /* Assets.xcassets */; };
@@ -15,8 +16,6 @@
 		ED21C9D71E31F1F100EF24DE /* Dine_RISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9D61E31F1F100EF24DE /* Dine_RISTests.swift */; };
 		ED21C9E21E31F1F100EF24DE /* Dine_RISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */; };
 		ED21C9F61E31F24C00EF24DE /* Canteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED21C9F51E31F24C00EF24DE /* Canteen.swift */; };
-		ED6B60A21E332E7400BE4110 /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */; };
-		ED6B60A61E3330A800BE4110 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */; };
 		ED890E5C1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
 		ED890E5D1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
 		ED890E5E1E462072005ACD0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */; };
@@ -59,6 +58,7 @@
 		3C32F031D5D9E2635A6CBF24 /* Pods_Dine_RIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dine_RIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D510E0675540E92E712A25 /* Pods-Dine RIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dine RIS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS.release.xcconfig"; sourceTree = "<group>"; };
 		DB1AD04EAF3403098092D534 /* Pods-Dine RIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dine RIS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dine RIS/Pods-Dine RIS.debug.xcconfig"; sourceTree = "<group>"; };
+		ED0B32061E49FA0400F459A9 /* DishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
 		ED21C9BE1E31F1F000EF24DE /* Dine RIS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dine RIS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED21C9C61E31F1F100EF24DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,8 +72,6 @@
 		ED21C9E11E31F1F100EF24DE /* Dine_RISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dine_RISUITests.swift; sourceTree = "<group>"; };
 		ED21C9E31E31F1F100EF24DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED21C9F51E31F24C00EF24DE /* Canteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canteen.swift; sourceTree = "<group>"; };
-		ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
-		ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.plist; };
 		ED890E5B1E462072005ACD0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantMenuViewController.swift; sourceTree = "<group>"; };
 		EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,10 +149,10 @@
 				ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */,
 				ED21C9F51E31F24C00EF24DE /* Canteen.swift */,
 				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
+				ED0B32061E49FA0400F459A9 /* DishTableViewCell.swift */,
 				EDCD6A931E483F7100B2AC96 /* RestaurantDishesViewController.swift */,
 				EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */,
 				EDB1FC261E470AAC004B3684 /* RestaurantTableViewCell.swift */,
-				EDCD6A921E483B6700B2AC96 /* Old Restaurant View */,
 				ED21C9C81E31F1F100EF24DE /* Assets.xcassets */,
 				ED21C9CA1E31F1F100EF24DE /* LaunchScreen.storyboard */,
 				ED21C9CD1E31F1F100EF24DE /* Info.plist */,
@@ -179,15 +177,6 @@
 				ED21C9E31E31F1F100EF24DE /* Info.plist */,
 			);
 			path = "Dine RISUITests";
-			sourceTree = "<group>";
-		};
-		EDCD6A921E483B6700B2AC96 /* Old Restaurant View */ = {
-			isa = PBXGroup;
-			children = (
-				ED6B60A51E3330A800BE4110 /* RestaurantViewController.swift */,
-				ED6B60A11E332E7400BE4110 /* DishTableViewCell.swift */,
-			);
-			name = "Old Restaurant View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,11 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED6B60A21E332E7400BE4110 /* DishTableViewCell.swift in Sources */,
 				EDB1FC251E4709ED004B3684 /* RestaurantMenuViewController.swift in Sources */,
 				EDCD6A941E483F7100B2AC96 /* RestaurantDishesViewController.swift in Sources */,
-				ED6B60A61E3330A800BE4110 /* RestaurantViewController.swift in Sources */,
 				ED21C9C21E31F1F100EF24DE /* AppDelegate.swift in Sources */,
+				ED0B32071E49FA0400F459A9 /* DishTableViewCell.swift in Sources */,
 				EDB1FC271E470AAC004B3684 /* RestaurantTableViewCell.swift in Sources */,
 				ED21C9F61E31F24C00EF24DE /* Canteen.swift in Sources */,
 			);
