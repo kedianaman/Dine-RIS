@@ -14,6 +14,9 @@ class DishTableViewCell: UITableViewCell {
         didSet {
             dishNameLabel.text = dish?.name
             dishPriceLabel.text = ("฿ \(dish!.price!)")
+            if dish!.vegetarian {
+                dishNameLabel.text?.append(" (v)")
+            }
 
         }
     }
