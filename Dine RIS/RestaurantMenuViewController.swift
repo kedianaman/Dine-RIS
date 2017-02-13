@@ -22,7 +22,6 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
         ref = FIRDatabase.database().reference()
 
         fetchRestaurants()
-        // Do any additional setup after loading the view.
     }
     
     func fetchRestaurants() {

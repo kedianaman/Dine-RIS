@@ -38,7 +38,6 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
-        self.navigationController?.navigationBar.isHidden = true
         self.restaurantNameLabel.text = restaurant.name
         self.cuisineTypeLabel.text = restaurant.cuisineType
         fetchDishes()
@@ -67,16 +66,11 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
             }
         self.dishesTableView.reloadData()
         }, withCancel: nil)
-        
-        
     }
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        var titles = [String]()
-        for section in sections {
-            titles.append(section.title)
-        }
-        return titles
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = sections[section]
+        return section.title
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
