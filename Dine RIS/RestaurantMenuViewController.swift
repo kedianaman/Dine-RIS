@@ -63,7 +63,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let restaurantViewController = segue.destination as? RestaurantDishesViewController {
+        if let restaurantViewController = segue.destination as? DishesViewController {
             let index = sender as! Int
             restaurantViewController.restaurant = restaurantList[index]
         }

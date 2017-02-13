@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var dishesTableView: UITableView!
     @IBOutlet weak var restaurantNameLabel: UILabel!
@@ -40,6 +40,8 @@ class RestaurantDishesViewController: UIViewController, UITableViewDelegate, UIT
         ref = FIRDatabase.database().reference()
         self.restaurantNameLabel.text = restaurant.name
         self.cuisineTypeLabel.text = restaurant.cuisineType
+        dishesTableView.rowHeight = UITableViewAutomaticDimension
+        dishesTableView.estimatedRowHeight = 100
         fetchDishes()
     }
     
