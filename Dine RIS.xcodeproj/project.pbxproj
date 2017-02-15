@@ -146,9 +146,9 @@
 		ED21C9C01E31F1F000EF24DE /* Dine RIS */ = {
 			isa = PBXGroup;
 			children = (
+				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
 				ED21C9C11E31F1F000EF24DE /* AppDelegate.swift */,
 				ED21C9F51E31F24C00EF24DE /* Canteen.swift */,
-				ED21C9C51E31F1F100EF24DE /* Main.storyboard */,
 				ED0B32061E49FA0400F459A9 /* DishTableViewCell.swift */,
 				EDCD6A931E483F7100B2AC96 /* DishesViewController.swift */,
 				EDB1FC241E4709ED004B3684 /* RestaurantMenuViewController.swift */,
