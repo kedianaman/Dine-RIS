@@ -38,15 +38,6 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
                 self.restaurantTableView.reloadData()
 
             }
-//            if let restaurantDict = snapshot.value as? [String: AnyObject] {
-//                let name = restaurantDict["name"] as! String
-//                let cuisineType = restaurantDict["cuisineType"] as! String
-//                let imageName = restaurantDict["bannerImage"] as! String
-//                let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
-//                self.restaurantList.append(restaurant)
-//                self.restaurantTableView.reloadData()
-//                
-//            }
         })
         
     }
@@ -65,6 +56,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
         let restaurant = restaurantList[indexPath.row]
         restaurantCell.restaurantNameLabel.text = restaurant.name
         restaurantCell.restaurantTypeSubtitle.text = restaurant.cuisineType
+        restaurantCell.selectionStyle = .none
         return restaurantCell
     }
     

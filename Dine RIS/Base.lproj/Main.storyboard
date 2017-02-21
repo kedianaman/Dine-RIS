@@ -272,23 +272,23 @@
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="rG0-hf-WZK">
-                                <rect key="frame" x="20" y="40" width="255" height="60"/>
+                                <rect key="frame" x="20" y="40" width="335" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSN-ec-xyj">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-pA-RvD">
-                                        <rect key="frame" x="0.0" y="36" width="255" height="24"/>
+                                        <rect key="frame" x="0.0" y="36" width="335" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5F7-2r-TNK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5F7-2r-TNK">
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -296,11 +296,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCr-6A-h3z" id="rF4-0a-jo0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-hQ-acb">
-                                                    <rect key="frame" x="15" y="10" width="260" height="23"/>
+                                                    <rect key="frame" x="15" y="10" width="260" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="260" id="1wn-4C-JRP"/>
                                                     </constraints>
@@ -351,7 +351,7 @@
                             <constraint firstItem="bxI-Bd-S4a" firstAttribute="top" secondItem="7Pp-1A-z5G" secondAttribute="bottom" id="mhH-hg-iNh"/>
                             <constraint firstItem="rG0-hf-WZK" firstAttribute="centerY" secondItem="bxI-Bd-S4a" secondAttribute="centerY" id="uca-Yg-w6x"/>
                             <constraint firstAttribute="trailing" secondItem="bxI-Bd-S4a" secondAttribute="trailing" id="yVe-cf-Ry4"/>
-                            <constraint firstAttribute="trailing" secondItem="rG0-hf-WZK" secondAttribute="trailing" constant="100" id="zIM-e2-a9H"/>
+                            <constraint firstAttribute="trailing" secondItem="rG0-hf-WZK" secondAttribute="trailing" constant="20" id="zIM-e2-a9H"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>

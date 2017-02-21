@@ -89,6 +89,7 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "DishesCellIdentifier") as! DishTableViewCell
         let dishes = sections[indexPath.section].dishes
         cell.dish = dishes[indexPath.row]
+        cell.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.02)
         return cell
     }
     
