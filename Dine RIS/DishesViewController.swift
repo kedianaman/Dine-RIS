@@ -47,23 +47,23 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func fetchDishes() {
         refHandle = ref.child("Dishes").child(restaurant.name!).observe(.value, with: { (snapshot) in
-            let sectionDict = snapshot.value as! NSDictionary
-//            print(snapshot)
-            let sectionTitles = sectionDict.allKeys as! [String]
-            for sectionTitle in sectionTitles {
-                let sectionsSnap = snapshot.childSnapshot(forPath: sectionTitle)
-                var dishesInSection = [Dish]()
-                if let dishesSnap = sectionsSnap.children.allObjects as? [FIRDataSnapshot] {
-                    for dish in dishesSnap {
-                        let dishInfo = dish.value as! [String:Any]
-                        let dishName = dishInfo["dishName"] as! String
-                        let dishPrice = dishInfo["dishPrice"] as! Int
-                        let vegetarian = dishInfo["vegetarian"] as! Bool
-                        let dish = Dish(name: dishName, price: dishPrice, vegetarian: vegetarian)
-                        dishesInSection.append(dish)
+            for section in snapshot.children {
+                if let section = section as? FIRDataSnapshot {
+                    let sectionTitle = section.key
+                    let sectionsSnap = snapshot.childSnapshot(forPath: sectionTitle)
+                    var dishesInSection = [Dish]()
+                    if let dishesSnap = sectionsSnap.children.allObjects as? [FIRDataSnapshot] {
+                        for dish in dishesSnap {
+                            let dishInfo = dish.value as! [String:Any]
+                            let dishName = dishInfo["dishName"] as! String
+                            let dishPrice = dishInfo["dishPrice"] as! Int
+                            let vegetarian = dishInfo["vegetarian"] as! Bool
+                            let dish = Dish(name: dishName, price: dishPrice, vegetarian: vegetarian)
+                            dishesInSection.append(dish)
+                        }
+                        let section = Section(title: sectionTitle, dishes: dishesInSection)
+                        self.sections.append(section)
                     }
-                    let section = Section(title: sectionTitle, dishes: dishesInSection)
-                    self.sections.append(section)
                 }
             }
         self.dishesTableView.reloadData()
@@ -83,6 +83,7 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let section = sections[section]
         return section.dishes.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DishesCellIdentifier") as! DishTableViewCell

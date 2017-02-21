@@ -26,17 +26,27 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     
     func fetchRestaurants() {
 
-        refHandle = ref.child("Restaurants").observe(.childAdded, with: { (snapshot) in
-            if let restaurantDict = snapshot.value as? [String: AnyObject] {
-                
+        refHandle = ref.child("Restaurants").observe(.value, with: { (snapshot) in
+            for restaurant in snapshot.children {
+                let restaurantSnap = restaurant as! FIRDataSnapshot
+                let restaurantDict = restaurantSnap.value as! NSDictionary
                 let name = restaurantDict["name"] as! String
                 let cuisineType = restaurantDict["cuisineType"] as! String
                 let imageName = restaurantDict["bannerImage"] as! String
                 let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
                 self.restaurantList.append(restaurant)
                 self.restaurantTableView.reloadData()
-                
+
             }
+//            if let restaurantDict = snapshot.value as? [String: AnyObject] {
+//                let name = restaurantDict["name"] as! String
+//                let cuisineType = restaurantDict["cuisineType"] as! String
+//                let imageName = restaurantDict["bannerImage"] as! String
+//                let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
+//                self.restaurantList.append(restaurant)
+//                self.restaurantTableView.reloadData()
+//                
+//            }
         })
         
     }
