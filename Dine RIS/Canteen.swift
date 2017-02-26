@@ -22,8 +22,10 @@ class Canteen {
     }
     
     private func fetchData() {
-        ref.child("Restaurants").observe(.childAdded, with: { (snapshot) in
-            if let restaurantDict = snapshot.value as? [String: AnyObject] {
+        ref.child("Restaurants").observe(.value, with: { (snapshot) in
+            for restaurant in snapshot.children {
+                let restaurantSnap = restaurant as! FIRDataSnapshot
+                let restaurantDict = restaurantSnap.value as! NSDictionary
                 let name = restaurantDict["name"] as! String
                 let cuisineType = restaurantDict["cuisineType"] as! String
                 let imageName = restaurantDict["bannerImage"] as! String
@@ -32,32 +34,30 @@ class Canteen {
             }
             for restaurant in self.restaurants {
                 self.ref.child("Dishes").child(restaurant.name!).observe(.value, with: { (snapshot) in
-                    let sectionDict = snapshot.value as! NSDictionary
-                    //            print(snapshot)
-                    let sectionTitles = sectionDict.allKeys as! [String]
-                    for sectionTitle in sectionTitles {
-                        let sectionsSnap = snapshot.childSnapshot(forPath: sectionTitle)
-                        var dishesInSection = [Dish]()
-                        if let dishesSnap = sectionsSnap.children.allObjects as? [FIRDataSnapshot] {
-                            for dish in dishesSnap {
-                                let dishInfo = dish.value as! [String:Any]
-                                let dishName = dishInfo["dishName"] as! String
-                                let dishPrice = dishInfo["dishPrice"] as! Int
-                                let vegetarian = dishInfo["vegetarian"] as! Bool
-                                let dish = Dish(name: dishName, price: dishPrice, vegetarian: vegetarian)
-                                dishesInSection.append(dish)
+                    for section in snapshot.children {
+                        if let section = section as? FIRDataSnapshot {
+                            let sectionTitle = section.key
+                            let sectionsSnap = snapshot.childSnapshot(forPath: sectionTitle)
+                            var dishesInSection = [Dish]()
+                            if let dishesSnap = sectionsSnap.children.allObjects as? [FIRDataSnapshot] {
+                                
+                                for dish in dishesSnap {
+                                    let dishInfo = dish.value as! [String:Any]
+                                    let dishName = dishInfo["dishName"] as! String
+                                    let dishPrice = dishInfo["dishPrice"] as! Int
+                                    let vegetarian = dishInfo["vegetarian"] as! Bool
+                                    let dish = Dish(name: dishName, price: dishPrice, vegetarian: vegetarian)
+                                    dishesInSection.append(dish)
+                                }
+                                let section = Restaurant.Section(title: sectionTitle, dishes: dishesInSection)
+                                restaurant.addSection(section: section)
                             }
-                            let section = Restaurant.Section(title: sectionTitle, dishes: dishesInSection)
-                            restaurant.addSection(section: section)
                         }
                     }
                 }, withCancel: nil)
-                print("Restaurant: \(restaurant.name!))")
-                print(restaurant.numberOfDishes())
             }
         })
     }
-    
 }
 
 class Restaurant {

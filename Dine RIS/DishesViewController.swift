@@ -53,6 +53,7 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let sectionsSnap = snapshot.childSnapshot(forPath: sectionTitle)
                     var dishesInSection = [Dish]()
                     if let dishesSnap = sectionsSnap.children.allObjects as? [FIRDataSnapshot] {
+                    
                         for dish in dishesSnap {
                             let dishInfo = dish.value as! [String:Any]
                             let dishName = dishInfo["dishName"] as! String
