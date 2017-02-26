@@ -96,9 +96,18 @@ class Restaurant {
         return sections[index.section].dishes[index.row]
     }
     
+    func numberOfSections() -> Int {
+        return sections.count
+    }
+    
+    func sectionAtIndex(index: Int) -> Section {
+        return sections[index]
+    }
+    
     func addSection(section: Section) {
         self.sections.append(section)
     }
+    
     
 }
 

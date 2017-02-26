@@ -71,9 +71,20 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }, withCancel: nil)
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        let section = sections[section]
+//        return section.title
+//    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionHeaderView = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderCellIdentifier") as! SectionHeaderTableViewCell
         let section = sections[section]
-        return section.title
+        sectionHeaderView.sectionTitle.text = section.title
+        return sectionHeaderView
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

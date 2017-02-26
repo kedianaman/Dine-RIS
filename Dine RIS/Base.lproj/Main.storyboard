@@ -296,7 +296,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCr-6A-h3z" id="rF4-0a-jo0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-hQ-acb">
@@ -327,6 +327,32 @@
                                         <connections>
                                             <outlet property="dishNameLabel" destination="2F8-hQ-acb" id="Pob-1O-rSn"/>
                                             <outlet property="dishPriceLabel" destination="e3e-tn-3zR" id="7gr-0A-cyi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionHeaderCellIdentifier" rowHeight="40" id="NoT-fO-fxo" customClass="SectionHeaderTableViewCell" customModule="Dine_RIS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NoT-fO-fxo" id="7Zt-eb-KOg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Section Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-6K-wOX">
+                                                    <rect key="frame" x="15" y="10" width="337" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gcW-6K-wOX" secondAttribute="trailing" constant="15" id="0N8-IY-XWJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="gcW-6K-wOX" secondAttribute="bottom" constant="10" id="JoZ-lk-ae3"/>
+                                                <constraint firstItem="gcW-6K-wOX" firstAttribute="leading" secondItem="7Zt-eb-KOg" secondAttribute="leading" constant="15" id="aU8-kS-qVb"/>
+                                                <constraint firstItem="gcW-6K-wOX" firstAttribute="top" secondItem="7Zt-eb-KOg" secondAttribute="top" constant="10" id="h92-Bs-g08"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="sectionTitle" destination="gcW-6K-wOX" id="D69-WE-Qtr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
