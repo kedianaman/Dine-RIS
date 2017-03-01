@@ -31,9 +31,12 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wjM-oZ-vaa" id="N5P-oE-C9s">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-4n-4MK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                                </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EFt-O7-MbP">
                                                     <rect key="frame" x="20" y="10" width="355" height="79.5"/>
                                                     <subviews>
@@ -53,13 +56,23 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="nzW-4n-4MK" secondAttribute="bottom" id="HEa-jt-zgX"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="top" secondItem="N5P-oE-C9s" secondAttribute="top" id="Ia9-w5-3QR"/>
+                                                <constraint firstAttribute="trailing" secondItem="nzW-4n-4MK" secondAttribute="trailing" id="Iay-ji-gzl"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" id="Ona-ja-IHB"/>
                                                 <constraint firstItem="EFt-O7-MbP" firstAttribute="top" secondItem="N5P-oE-C9s" secondAttribute="top" constant="10" id="pyN-2A-3Ey"/>
                                                 <constraint firstItem="EFt-O7-MbP" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" constant="20" id="tzD-kj-OFG"/>
                                                 <constraint firstAttribute="bottom" secondItem="EFt-O7-MbP" secondAttribute="bottom" constant="10" id="wlf-d9-KFa"/>
                                                 <constraint firstAttribute="trailing" secondItem="EFt-O7-MbP" secondAttribute="trailing" id="xSZ-XD-jZz"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="EFt-O7-MbP"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bannerImageView" destination="nzW-4n-4MK" id="kzJ-ra-H7E"/>
                                             <outlet property="restaurantNameLabel" destination="ixv-QN-xKQ" id="xlY-es-Z14"/>
                                             <outlet property="restaurantTypeSubtitle" destination="1aO-ba-UrU" id="fQ3-oD-8HO"/>
                                         </connections>
@@ -151,7 +164,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EfW-e6-meZ" id="UY4-wb-WFU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-ER-QKl">
@@ -271,7 +284,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCr-6A-h3z" id="rF4-0a-jo0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-hQ-acb">
@@ -309,7 +322,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NoT-fO-fxo" id="7Zt-eb-KOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Danburry" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-8Y-xzc">

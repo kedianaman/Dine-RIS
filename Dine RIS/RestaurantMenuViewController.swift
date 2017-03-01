@@ -20,7 +20,6 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
-
         fetchRestaurants()
     }
     
@@ -55,6 +54,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
         let restaurant = restaurantList[indexPath.row]
         restaurantCell.restaurantNameLabel.text = restaurant.name
         restaurantCell.restaurantTypeSubtitle.text = restaurant.cuisineType
+        restaurantCell.bannerImageView.image = restaurant.image
         restaurantCell.selectionStyle = .none
         return restaurantCell
     }

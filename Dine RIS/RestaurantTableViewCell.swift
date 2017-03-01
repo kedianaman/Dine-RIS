@@ -12,5 +12,6 @@ class RestaurantTableViewCell: UITableViewCell {
 
     @IBOutlet weak var restaurantNameLabel: UILabel!
     @IBOutlet weak var restaurantTypeSubtitle: UILabel!
+    @IBOutlet weak var bannerImageView: UIImageView!
     
 }
