@@ -13,8 +13,6 @@ import FirebaseDatabase
 class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var dishesTableView: UITableView!
-    @IBOutlet weak var restaurantNameLabel: UILabel!
-    @IBOutlet weak var cuisineTypeLabel: UILabel!
     @IBOutlet weak var bannerImageView: UIImageView!
     
     var restaurant: Restaurant!
@@ -38,9 +36,7 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
-        self.restaurantNameLabel.text = restaurant.name
-        self.cuisineTypeLabel.text = restaurant.cuisineType
-        dishesTableView.rowHeight = UITableViewAutomaticDimension
+        self.bannerImageView.image = restaurant.image
         dishesTableView.estimatedRowHeight = 100
         fetchDishes()
     }
@@ -77,13 +73,14 @@ class DishesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 45
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let sectionHeaderView = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderCellIdentifier") as! SectionHeaderTableViewCell
         let section = sections[section]
         sectionHeaderView.sectionTitle.text = section.title
+        sectionHeaderView.sectionBackgroundImage.image = restaurant.image
         return sectionHeaderView
     }
     

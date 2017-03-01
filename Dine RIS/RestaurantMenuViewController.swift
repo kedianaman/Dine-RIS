@@ -36,7 +36,6 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
                 let restaurant = Restaurant(name: name, cuisineType: cuisineType, image: imageName)
                 self.restaurantList.append(restaurant)
                 self.restaurantTableView.reloadData()
-
             }
         })
         

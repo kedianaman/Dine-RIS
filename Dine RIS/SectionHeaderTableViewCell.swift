@@ -9,5 +9,6 @@
 import UIKit
 
 class SectionHeaderTableViewCell: UITableViewCell {
+    @IBOutlet weak var sectionBackgroundImage: UIImageView!
     @IBOutlet weak var sectionTitle: UILabel!
 }
