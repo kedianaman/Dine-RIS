@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-jP-ED4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HEZ-jP-ED4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -31,11 +31,14 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wjM-oZ-vaa" id="N5P-oE-C9s">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-4n-4MK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="100.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="nzW-4n-4MK" secondAttribute="height" multiplier="3.6:1" id="cBI-3x-ykd"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EFt-O7-MbP">
                                                     <rect key="frame" x="20" y="10" width="355" height="79.5"/>
@@ -56,10 +59,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="nzW-4n-4MK" secondAttribute="bottom" id="HEa-jt-zgX"/>
-                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="top" secondItem="N5P-oE-C9s" secondAttribute="top" id="Ia9-w5-3QR"/>
-                                                <constraint firstAttribute="trailing" secondItem="nzW-4n-4MK" secondAttribute="trailing" id="Iay-ji-gzl"/>
-                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" id="Ona-ja-IHB"/>
+                                                <constraint firstAttribute="trailing" secondItem="nzW-4n-4MK" secondAttribute="trailing" constant="7.5" id="Iay-ji-gzl"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" constant="7.5" id="Ona-ja-IHB"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="centerY" secondItem="N5P-oE-C9s" secondAttribute="centerY" id="Tlx-Vh-jyk"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="centerX" secondItem="N5P-oE-C9s" secondAttribute="centerX" id="Wo0-ga-DRF"/>
                                                 <constraint firstItem="EFt-O7-MbP" firstAttribute="top" secondItem="N5P-oE-C9s" secondAttribute="top" constant="10" id="pyN-2A-3Ey"/>
                                                 <constraint firstItem="EFt-O7-MbP" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" constant="20" id="tzD-kj-OFG"/>
                                                 <constraint firstAttribute="bottom" secondItem="EFt-O7-MbP" secondAttribute="bottom" constant="10" id="wlf-d9-KFa"/>

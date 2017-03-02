@@ -43,7 +43,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     //TableView Delegate and DataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 115
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantList.count
