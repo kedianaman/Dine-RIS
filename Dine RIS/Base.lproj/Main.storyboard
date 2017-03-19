@@ -273,7 +273,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Danburry" translatesAutoresizingMaskIntoConstraints="NO" id="9YB-Tz-Mg6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Danebury" translatesAutoresizingMaskIntoConstraints="NO" id="9YB-Tz-Mg6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9YB-Tz-Mg6" secondAttribute="height" multiplier="3.6:1" id="nKj-5F-jzH"/>
@@ -419,6 +419,7 @@
     <resources>
         <image name="010_phone" width="50" height="50"/>
         <image name="Danburry" width="1440" height="400"/>
+        <image name="Danebury" width="1440" height="400"/>
         <image name="RedeemerBanner" width="1280" height="194"/>
     </resources>
 </document>

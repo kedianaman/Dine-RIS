@@ -10,17 +10,28 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationControllerDelegate {
     
+
     @IBOutlet weak var restaurantTableView: UITableView!
     var ref: FIRDatabaseReference!
     var refHandle: UInt!
     var restaurantList = [Restaurant]()
     
+    let customAnimationController = CustomAnimationController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = FIRDatabase.database().reference()
         fetchRestaurants()
+        self.navigationController?.delegate = self;
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == .push {
+            return customAnimationController
+        }
+        return nil
     }
     
     func fetchRestaurants() {
@@ -71,3 +82,4 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     }
 
 }
+
