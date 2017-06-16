@@ -54,7 +54,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     //TableView Delegate and DataSource
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 115
+        return 104
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurantList.count
@@ -71,6 +71,7 @@ class RestaurantMenuViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         performSegue(withIdentifier: "RestaurantDishesSegueIdentifier", sender: indexPath.row)
     }
     

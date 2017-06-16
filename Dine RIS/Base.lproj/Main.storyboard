@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nzW-4n-4MK">
-                                                    <rect key="frame" x="7.5" y="-0.5" width="360" height="100.5"/>
+                                                    <rect key="frame" x="0.0" y="-2.5" width="375" height="104"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="nzW-4n-4MK" secondAttribute="height" multiplier="3.6:1" id="cBI-3x-ykd"/>
                                                     </constraints>
@@ -59,8 +59,8 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="nzW-4n-4MK" secondAttribute="trailing" constant="7.5" id="Iay-ji-gzl"/>
-                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" constant="7.5" id="Ona-ja-IHB"/>
+                                                <constraint firstAttribute="trailing" secondItem="nzW-4n-4MK" secondAttribute="trailing" id="Iay-ji-gzl"/>
+                                                <constraint firstItem="nzW-4n-4MK" firstAttribute="leading" secondItem="N5P-oE-C9s" secondAttribute="leading" id="Ona-ja-IHB"/>
                                                 <constraint firstItem="nzW-4n-4MK" firstAttribute="centerY" secondItem="N5P-oE-C9s" secondAttribute="centerY" id="Tlx-Vh-jyk"/>
                                                 <constraint firstItem="nzW-4n-4MK" firstAttribute="centerX" secondItem="N5P-oE-C9s" secondAttribute="centerX" id="Wo0-ga-DRF"/>
                                                 <constraint firstItem="EFt-O7-MbP" firstAttribute="top" secondItem="N5P-oE-C9s" secondAttribute="top" constant="10" id="pyN-2A-3Ey"/>
@@ -167,7 +167,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EfW-e6-meZ" id="UY4-wb-WFU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-ER-QKl">
@@ -287,7 +287,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCr-6A-h3z" id="rF4-0a-jo0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dish Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F8-hQ-acb">
@@ -325,7 +325,7 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NoT-fO-fxo" id="7Zt-eb-KOg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Danburry" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-8Y-xzc">
